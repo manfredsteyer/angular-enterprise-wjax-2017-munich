@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Holiday42 Redux-Edition</a>
+  </div>
+
+  <ul class="nav navbar-nav">
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="flight-search">Flight Search</a></li>
+    <li><a routerLink="passenger-search">Passenger Search</a></li>
+    <li><a routerLink="flight-lookahead">Lookahead</a></li>
+<!--
+    <li><a (click)="toggleBasket()">Toogle Basket</a></li>
+-->
+  </ul>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+
+
+<!-- 2nd outlet 
+<router-outlet name="aux"></router-outlet>
+-->
+
+<div class="loading-indicator" *ngIf="showWaitInfo">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+
+
